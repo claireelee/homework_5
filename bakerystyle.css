@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+    --fg: #333333;
+    --bg: #ffffff;
+    --accent: #f8a4d2;
+    --accentbg: #ffeaf6;
+    --accenthover: #f387c2;
+}
+
+
+html {
+    font-family: Poppins;
+    background-color: var(--bg);
+    color: var(--fg);
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.button {
+    background-color:var(--accent); 
+    border: none;
+    border-radius: 40px;
+    color: var(--fg);
+    padding: 18px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--fg);
+}
+
+.navcontainer {
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar {
+    overflow: hidden;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: solid;
+    border-color: var(--accent);
+    font-weight: 500;
+}
+
+.navbar .logo {
+    float: left;
+    display: block;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.navbar .navbutton a {
+    float: left;
+    display: block;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.navbar .navbutton a:hover {
+    color: var(--accenthover);
+    font-weight:600;
+
+}
+
+.navbar .cart a {
+    float: right;
+    display: block;
+    padding-top: 20px;
+}
+
+.subnavbar {
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--accentbg);
+}
+
+.subnavbar .navbutton a {
+    float: left;
+    display: block;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.subnavbar .navbutton a:hover {
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.content .row {
+    width: 60%;
+    max-width: 50em;
+    justify-content: space-around;
+}
+
+.divider {
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: solid;
+    border-color: var(--accent);
+}
+
+.flexrow {
+    float: right;
+    padding: 20px;
+    padding-right: 100px;
+}
+
+
+.highlight {
+    color: var(--accent);
+}
+
+
+
+.justify {
+    text-align: start;
+}
+
+.mainbox {
+    padding: 10px;
+    background-color:var(--accentbg);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 90%;
+    text-align: center;
+}
+
+.selectionbox {
+    padding: 10px;
+    background-color:var(--bg);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.selectionboxleft {
+    padding: 10px;
+    background-color:var(--bg);
+    padding-left: 55px;
+    padding-right: 30px;
+    width: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.selectionitem {
+    background-color: var(--bg);
+    border-color: var(--accent);
+    border-radius: 20px;
+    border-style: solid;
+    padding: 15px;
+    color: var(--fg);
+    width: 29%;
+    height: 8%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.selectionitem .spacer {
+    border-radius: 20px;
+    padding: 15px;
+    width: 29%;
+    height: 8%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.selectionitem .minispacer {
+    border-radius: 20px;
+    padding: 15px;
+    width: 12%;
+    height: 8%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.selectionitem .text {
+    color: var(--fg);
+    float: left;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.selectionitem:hover {
+    background-color: var(--accentbg);
+    cursor: pointer;
+}
+
+.selectionbox .icon{
+    color: var(--accent);
+}
+
+
+.selectionboxleft .icon{
+    color: var(--accent);
+}
+
+.ordersummary {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--accentbg);
+    padding-left: 100px;
+}
+
+.ordersummary .text {
+    color: var(--fg);
+    float: left;
+}
+
+.favoritebox{
+    background-color: var(--bg);
+    border-color: var(--accent);
+    border-radius: 20px;
+    border-style: solid;
+    color: var(--fg);
+}
+
+.favoriteitems {
+    background-color: var(--bg);
+    border-color: var(--accent);
+    border-radius: 20px;
+    border-style: solid;
+    padding: 15px;
+    color: var(--fg);
+    width: 29%;
+    height: 8%;
+    float: left;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 60% 40%;
+    justify-content: space-between; /*space columns */ 
+}
+
+.favoritepicture {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.favoritetext {
+    grid-area: 1 / 2 / span 1 / span 2;
+}
+
+.favoriteicon {
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+.favoritebutton {
+    grid-area: 2 / 2 / span 1 / span 2;
+    align-content: center;
+    justify-content: center;
+}
+
+a {
+    color: var(--fg);
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
