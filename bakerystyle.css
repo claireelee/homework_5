@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); /*font*/
+
+/*colors*/
+
 :root {
     --fg: #333333;
     --bg: #ffffff;
@@ -7,6 +10,7 @@
     --accenthover: #f387c2;
 }
 
+/*main html and body settings*/
 
 html {
     font-family: Poppins;
@@ -19,6 +23,8 @@ body {
     margin: 0;
     height: 100%;
 }
+
+/*button format*/
 
 .button {
     background-color:var(--accent); 
@@ -34,9 +40,7 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
-    color: var(--fg);
-}
+/*navigation bar format*/
 
 .navcontainer {
     top: 0px;
@@ -88,6 +92,8 @@ body {
     padding-top: 20px;
 }
 
+/*sub-navigation bar for order page*/
+
 .subnavbar {
     overflow: hidden;
     padding: 10px;
@@ -107,6 +113,8 @@ body {
 .subnavbar .navbutton a:hover {
     font-weight: 600;
 }
+
+/*content container settings*/
 
 .main {
     display: flex;
@@ -144,16 +152,15 @@ body {
     padding-right: 100px;
 }
 
-
 .highlight {
     color: var(--accent);
 }
 
-
-
 .justify {
     text-align: start;
 }
+
+/*parent containers for child items*/
 
 .mainbox {
     padding: 10px;
@@ -187,6 +194,8 @@ body {
     flex-direction: row;
     justify-content: left;
 }
+
+/*child item - order selection*/
 
 .selectionitem {
     background-color: var(--bg);
@@ -245,6 +254,8 @@ body {
     color: var(--accent);
 }
 
+/*order summary*/
+
 .ordersummary {
     width: 100%;
     overflow: hidden;
@@ -258,6 +269,8 @@ body {
     color: var(--fg);
     float: left;
 }
+
+/*parent and child containers for favorite items tab*/
 
 .favoritebox{
     background-color: var(--bg);
